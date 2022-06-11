@@ -1,0 +1,16 @@
+/* localisation */
+.localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#F3F3F3;
+    gap:16px;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    & .localisation__text {
+        font-size: 15px;
+    }
+    & .localisation__ico {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,29 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../abstracts/mixins";
+/* process */
+.process {
+    background-color:$color-white;
+    & .process__container {
+        padding:16px;
+    }
+    & .process__title {
+        font-family: $font-roboto;
+    }
+    & .process__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    & li {
+        background-color: grey;
+        padding: 16px 32px;
+        border-radius: 16px;
+        flex-basis: 100%;
+        @include normal-shadow;
+            &:hover {
+                background-color: lighten($color-primary,35);
+                @include bold-shadow;
+            }
+    }
+}

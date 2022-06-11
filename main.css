@@ -9,6 +9,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -311,6 +313,7 @@ template {
   display: none;
 }
 
+/* header */
 .header {
   background-color: #FFF;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -319,7 +322,90 @@ template {
 .header .header__logo {
   font-family: "Shrikhand", cursive;
   text-align: center;
+  font-size: 30px;
   margin: 0;
+}
+
+/* localisation */
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+  gap: 16px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.localisation .localisation__text {
+  font-size: 15px;
+}
+.localisation .localisation__ico {
+  font-size: 17px;
+}
+
+/* explore */
+.explore {
+  background-color: #fafafa;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.explore .explore__title {
+  margin: 0;
+}
+.explore .explore__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 13px;
+}
+.explore .explore__btn {
+  padding: 15px 21px;
+  margin-top: 13px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition-duration: 1000ms;
+  box-shadow: 1px 1px 5px grey;
+}
+.explore .explore__btn:hover {
+  cursor: pointer;
+  filter: brightness(115%);
+  transition-duration: 1000ms;
+  box-shadow: 2px 2px 6px grey;
+}
+
+/* process */
+.process {
+  background-color: #FFF;
+}
+.process .process__container {
+  padding: 16px;
+}
+.process .process__title {
+  font-family: "Roboto", serif;
+}
+.process .process__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.process li {
+  background-color: grey;
+  padding: 16px 32px;
+  border-radius: 16px;
+  flex-basis: 100%;
+  box-shadow: 1px 1px 5px grey;
+}
+.process li:hover {
+  background-color: #f2eafb;
+  box-shadow: 2px 2px 6px grey;
 }
 
 /*# sourceMappingURL=main.css.map */

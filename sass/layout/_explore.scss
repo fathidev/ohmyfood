@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+@use '../abstracts/mixins';
+/* explore */
+.explore {
+    background-color: #fafafa;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:"Roboto",sans-serif ;
+    
+    & .explore__title {
+        margin: 0;
+    }
+    & .explore__subtitle {   
+        font-weight:300;
+        font-size: 18px;
+        margin-top: 13px;
+    }
+    & .explore__btn {
+        padding: 15px 21px;
+        margin-top: 13px;
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        border-radius: 40px;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        transition-duration: 1000ms;
+        @include normal-shadow;
+    }
+    & .explore__btn:hover {
+        cursor: pointer;
+        filter: brightness(115%);
+        transition-duration: 1000ms;
+        @include bold-shadow;
+    }
+}

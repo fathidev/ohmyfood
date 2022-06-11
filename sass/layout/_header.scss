@@ -1,6 +1,7 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 @import "../base/typography";
+/* header */
 .header {
     background-color: $color-white;
     @include box-shadow;
@@ -8,7 +9,7 @@
     & .header__logo {
         font-family: $font-schrikhand;
         text-align: center;
+        font-size: 30px;
         margin:0;
     }
-
 }
