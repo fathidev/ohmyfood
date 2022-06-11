@@ -7,3 +7,7 @@
 @mixin bold-shadow {
     box-shadow: 2px 2px 6px grey;
 }
+
+@mixin transition-duration {
+    transition-duration: 1500ms; 
+}
