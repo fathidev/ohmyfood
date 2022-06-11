@@ -1,9 +1,9 @@
-@import "./sass/abstracts/variables";
+@use "./sass/abstracts/variables";
 
-@import "./sass/base/normalise";
-@import "./sass/base/typography";
+@use "./sass/base/normalise";
+@use "./sass/base/typography";
 
-@import "./sass/layout/header";
-@import "./sass/layout/localisation";
-@import "./sass/layout/explore";
-@import "./sass/layout/process";
+@use "./sass/layout/header";
+@use "./sass/layout/localisation";
+@use "./sass/layout/explore";
+@use "./sass/layout/process";

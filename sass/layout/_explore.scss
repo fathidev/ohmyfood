@@ -22,19 +22,19 @@
     & .explore__btn {
         padding: 15px 21px;
         margin-top: 13px;
-        color: $color-white;
+        color: variables.$color-white;
         font-size: 16px;
         font-weight: 500;
         border: none;
         border-radius: 40px;
-        background-image: linear-gradient($color-secondary, $color-primary);
+        background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
         transition-duration: 1000ms;
-        @include normal-shadow;
+        @include mixins.normal-shadow;
     }
     & .explore__btn:hover {
         cursor: pointer;
         filter: brightness(115%);
         transition-duration: 1000ms;
-        @include bold-shadow;
+        @include mixins.bold-shadow;
     }
 }

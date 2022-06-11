@@ -3,12 +3,12 @@
 @use "../abstracts/mixins";
 /* process */
 .process {
-    background-color:$color-white;
+    background-color: variables.$color-white;
     & .process__container {
         padding:16px;
     }
     & .process__title {
-        font-family: $font-roboto;
+        font-family: typography.$font-roboto;
     }
     & .process__list {
         display: flex;
@@ -16,14 +16,16 @@
         gap: 24px;
     }
     & li {
-        background-color: grey;
+        background-color: #f6f6f6;
         padding: 16px 32px;
         border-radius: 16px;
         flex-basis: 100%;
-        @include normal-shadow;
+        transition-duration:1500ms;
+        @include mixins.normal-shadow;
             &:hover {
-                background-color: lighten($color-primary,35);
-                @include bold-shadow;
+                background-color: lighten(variables.$color-primary,35);
+                @include mixins.bold-shadow;
+                transition-duration:1500ms;
             }
     }
 }

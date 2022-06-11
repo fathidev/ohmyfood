@@ -1,13 +1,13 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-@import "../base/typography";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
 /* header */
 .header {
-    background-color: $color-white;
-    @include box-shadow;
+    background-color: variables.$color-white;
+    @include mixins.box-shadow;
     padding: 16px;
     & .header__logo {
-        font-family: $font-schrikhand;
+        font-family: typography.$font-schrikhand;
         text-align: center;
         font-size: 30px;
         margin:0;
