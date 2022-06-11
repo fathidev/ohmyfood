@@ -379,6 +379,7 @@ template {
 
 /* process */
 .process {
+  counter-reset: step-process;
   background-color: #FFF;
 }
 .process .process__container {
@@ -391,19 +392,36 @@ template {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: space-between;
 }
 .process li {
   background-color: #f6f6f6;
-  padding: 16px 32px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  width: 16px;
+  height: 10px;
+  padding: 32px 32px;
   border-radius: 16px;
+  list-style-type: none;
   flex-basis: 100%;
   transition-duration: 1500ms;
   box-shadow: 1px 1px 5px grey;
+}
+.process li::before {
+  content: counter(step-process);
+  counter-increment: step-process;
 }
 .process li:hover {
   background-color: #f2eafb;
   box-shadow: 2px 2px 6px grey;
   transition-duration: 1500ms;
+}
+.process li:hover .fa-solid {
+  color: #9356DC;
+  transition-duration: 1500ms;
+}
+.process li i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
