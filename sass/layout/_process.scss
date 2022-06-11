@@ -6,7 +6,9 @@
     counter-reset: step-process;
     background-color: variables.$color-white;
     & .process__container {
-        padding:16px;
+        padding:18px;
+        margin: 0;
+
     }
     & .process__title {
         font-family: typography.$font-roboto;
@@ -16,13 +18,29 @@
         flex-wrap: wrap;
         gap: 24px;
         justify-content: space-between;
+        padding-left:16px;
     }
     & li {
         // incrementation 1, 2, 3 for each item of the list
         &::before {
             content:counter(step-process);
             counter-increment: step-process;
+            background-color: variables.$color-primary;
+            color: variables.$color-white;
+            font-size: 13px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            // warning obligation : position relative for the parent
+            position: absolute;
+            bottom: 24px;
+            left:-14px
+            
         }
+        position: relative;
         background-color: #f6f6f6;
         font-family: typography.$font-roboto;
         font-weight: 500;
@@ -44,7 +62,8 @@
                 }
             }
             & i {
-                margin-right: 10px;
+                margin-right: 16px;
+                font-size: 20px;
             }
         
     }
