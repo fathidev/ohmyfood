@@ -6,10 +6,6 @@
     background-color: variables.$color-white;
     @include mixins.box-shadow;
     padding: 16px;
-    & .header__logo {
-        font-family: typography.$font-schrikhand;
-        text-align: center;
-        font-size: 30px;
-        margin:0;
-    }
+    display: flex;
+    justify-content: center;
 }

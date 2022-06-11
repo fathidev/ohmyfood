@@ -1,0 +1,32 @@
+@use "../base/typography";
+/* restaurants */
+.restaurants__container {
+    background-color: #fafafa;
+    padding:18px;
+    margin: 0;
+
+    
+    & .restaurants__title {
+        font-family: typography.$font-roboto;
+    }
+    & .restaurants__cards {
+  
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 2rem;
+            row-gap: 2rem;
+          
+            @media (min-width:64rem) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          
+        & .restaurants__card {
+            border: 1px solid red;
+            height: 250px;
+            flex-grow: 1;
+            min-width: 180px;
+            border-radius: 16px;
+
+        }
+    }
+}

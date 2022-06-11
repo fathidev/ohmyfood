@@ -54,6 +54,7 @@
         @include mixins.normal-shadow;
             &:hover {
                 background-color: lighten(variables.$color-primary,35);
+                cursor: pointer;
                 @include mixins.bold-shadow;
                 transition-duration:1500ms;
                 .fa-solid {

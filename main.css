@@ -314,12 +314,8 @@ template {
   background-color: #FFF;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 16px;
-}
-.header .header__logo {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  font-size: 30px;
-  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* localisation */
@@ -428,6 +424,7 @@ template {
 }
 .process li:hover {
   background-color: #f2eafb;
+  cursor: pointer;
   box-shadow: 2px 2px 6px grey;
   transition-duration: 1500ms;
 }
@@ -438,6 +435,34 @@ template {
 .process li i {
   margin-right: 16px;
   font-size: 20px;
+}
+
+/* restaurants */
+.restaurants__container {
+  background-color: #fafafa;
+  padding: 18px;
+  margin: 0;
+}
+.restaurants__container .restaurants__title {
+  font-family: "Roboto", serif;
+}
+.restaurants__container .restaurants__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (min-width: 64rem) {
+  .restaurants__container .restaurants__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.restaurants__container .restaurants__cards .restaurants__card {
+  border: 1px solid red;
+  height: 250px;
+  flex-grow: 1;
+  min-width: 180px;
+  border-radius: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
