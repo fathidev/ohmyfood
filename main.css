@@ -5,6 +5,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -307,12 +311,15 @@ template {
   display: none;
 }
 
-/* header */
 .header {
-  background-color: #FF79DA;
+  background-color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 16px;
 }
-.headerh2 {
-  color: red;
+.header .header__logo {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
