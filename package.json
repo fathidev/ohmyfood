@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass --watch main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fathidev/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fathidev/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/fathidev/ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}

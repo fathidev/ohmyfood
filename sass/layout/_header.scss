@@ -1,0 +1,8 @@
+@import "../abstracts/variables";
+
+/* header */
+.header {
+    background-color: $color-secondary;
+    &h2 {color: red;}
+
+}
