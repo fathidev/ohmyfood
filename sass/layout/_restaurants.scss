@@ -31,7 +31,7 @@
             min-width: 180px;
             border-radius: 16px;
             @include mixins.normal-shadow;
-            transition: transform .1s;
+            transition: transform .6s;
             &:hover {
                 transform: scale(1.02);
                 @include mixins.bold-shadow;
