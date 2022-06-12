@@ -469,6 +469,10 @@ a {
   min-width: 180px;
   border-radius: 16px;
   box-shadow: 1px 1px 5px grey;
+  transition: transform 0.1s;
+}
+.restaurants__card:hover {
+  transform: scale(1.03);
 }
 .restaurants__card.new {
   position: relative;
