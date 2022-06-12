@@ -472,7 +472,8 @@ a {
   transition: transform 0.1s;
 }
 .restaurants__card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px grey;
 }
 .restaurants__card.new {
   position: relative;

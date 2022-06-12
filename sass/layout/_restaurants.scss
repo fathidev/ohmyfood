@@ -33,8 +33,8 @@
             @include mixins.normal-shadow;
             transition: transform .1s;
             &:hover {
-                transform: scale(1.03);
-
+                transform: scale(1.02);
+                @include mixins.bold-shadow;
             }
             &.new {
                 position: relative;
