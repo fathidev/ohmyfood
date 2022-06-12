@@ -9,7 +9,7 @@
     margin: 0;
     }
 
-    &__title {
+    &__bloc-title{
         font-family: typography.$font-roboto;
     }
     &__cards {
@@ -24,7 +24,9 @@
     }
    
     &__card {
+            font-family: typography.$font-roboto;
             height: 250px;
+            color: inherit;
             flex-grow: 1;
             min-width: 180px;
             border-radius: 16px;
@@ -33,7 +35,7 @@
                 position: relative;
             }
             &.new::before {
-                content: "Nouveauté";
+                content: "Nouveau";
                 background-color: variables.$color-tertiary;
                 font-family: (typography.$font-roboto);
                 width: 100px;
@@ -56,4 +58,21 @@
         width: 100%;
         border-radius: 16px 16px 0 0;
     }
+    
+    &__description h3,p {
+        margin: 4px;
+        padding-left: 10px;
+    }
+    &__title {
+        font-family: typography.$font-roboto;
+        font-size: 16px;
+    }
+    &__subtitle {
+        font-family: typography.$font-roboto;
+        font-size: 14px;
+
+    }
+    // &__hearth {
+    
+    // }
 }
