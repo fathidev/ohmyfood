@@ -4,9 +4,9 @@
 /* restaurants */
 .restaurants {
     &__container {
-    background-color: #fafafa;
-    padding:18px;
-    margin: 0;
+        background-color: #fafafa;
+        padding:18px;
+        margin: 0;
     }
 
     &__bloc-title{
@@ -48,8 +48,7 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                color: darken(variables.$color-tertiary, 50%);
-                
+                color: darken(variables.$color-tertiary, 50%);                
             }
     }
     &__img {
@@ -63,6 +62,18 @@
         margin: 4px;
         padding-left: 10px;
     }
+    &__description {
+        display: flex;
+        // mettre le max d'espace entre le bloc de texte et le coeur
+        justify-content: space-between;
+        align-items: center;
+   
+    }
+        // mettre le texte de description en colonne
+    &__description-text {
+        flex-direction: column;
+    }
+
     &__title {
         font-family: typography.$font-roboto;
         font-size: 16px;
@@ -70,9 +81,10 @@
     &__subtitle {
         font-family: typography.$font-roboto;
         font-size: 14px;
-
     }
-    // &__hearth {
     
-    // }
+    .fa-heart:before{
+        color:red;
+        padding: 24px;
+    }
 }

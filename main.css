@@ -498,6 +498,14 @@ a {
   margin: 4px;
   padding-left: 10px;
 }
+.restaurants__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants__description-text {
+  flex-direction: column;
+}
 .restaurants__title {
   font-family: "Roboto", serif;
   font-size: 16px;
@@ -505,6 +513,10 @@ a {
 .restaurants__subtitle {
   font-family: "Roboto", serif;
   font-size: 14px;
+}
+.restaurants .fa-heart:before {
+  color: red;
+  padding: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
