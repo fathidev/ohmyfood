@@ -9,19 +9,30 @@
     <title>Accueil - Oh my Food</title>
 </head>
 <body>
+    <!-- header -->
     <div class="header">
         <img class="header__logo" src="./images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food"></img>
     </div>
+    <!-- fin header -->
+    <!-- main -->
     <main>
+
+        <!-- section localisation -->
         <section class="localisation">
             <i class="localisation__ico fa-solid fa-location-dot"></i>
             <h2 class="localisation__text">Paris, Belleville</h2>
         </section>
+        <!-- fin de section localisation -->
+
+        <!-- section explore -->
         <section class="explore">
             <h2 class="explore__title">Réservez le menu qui<br>vous convient</h2>
             <p class="explore__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
             <button class="explore__btn">Explorer nos restaurants</button>
         </section>
+        <!-- fin de section explore  -->
+
+        <!-- section process -->
         <section class="process">
             <div class="process__container">
                 <h2 class="process__title">Fonctionnement</h2>
@@ -32,9 +43,12 @@
                 </ol>
             </div> 
         </section>
+        <!-- fin de section process -->
+        
+        <!-- section restaurants  -->
         <section class="restaurants">
             <div class="restaurants__container">
-                <h2 class="restaurants__bloc-title">Restaurants</h2>
+                <h2 class="restaurants__container-title">Restaurants</h2>
                 <div class="restaurants__cards">
                    <a class="restaurants__card new" href="#">
                         <img class="restaurants__img" src="./images/restaurants/menu-1.jpg" alt="Menu resto 1" >
@@ -43,7 +57,7 @@
                                 <h3 class="restaurants__title">La palette du goût</h3>
                                 <p class="restaurants__subtitle">Ménilmontant</p>
                             </div>
-                            <i class="restaurants__heart fa-solid fa-heart fa-xl"></i>
+                            <i class="restaurants__heart fa-regular fa-heart fa-xl"></i>
                         </div>
                     </a>
                     <a class="restaurants__card new" href="#">
@@ -53,7 +67,7 @@
                                 <h3 class="restaurants__title">Le délice des sens</h3>
                                 <p class="restaurants__subtitle">Charonne</p>
                             </div>
-                            <i class="restaurants__heart fa-solid fa-heart fa-xl"></i>
+                            <i class="restaurants__heart fa-regular fa-heart fa-xl"></i>
                         </div>
                     </a>
                     <a class="restaurants__card" href="#">
@@ -63,7 +77,7 @@
                                 <h3 class="restaurants__title">La note enchantée</h3>
                                 <p class="restaurants__subtitle">Cité rouge</p>
                             </div>
-                            <i class="restaurants__heart fa-solid fa-heart fa-xl"></i>
+                            <i class="restaurants__heart fa-regular fa-heart fa-xl"></i>  
                         </div>
                     </a>
                     <a class="restaurants__card" href="#">
@@ -73,14 +87,19 @@
                                 <h3 class="restaurants__title">À la française</h3>
                                 <p class="restaurants__subtitle">Folie-Méricourt</p>
                             </div>
-                            <i class="restaurants__heart fa-solid fa-heart fa-xl"></i>
+                            <i class="restaurants__heart fa-regular fa-heart fa-xl"></i>
                         </div>
                     </a>
                 </div>
+                <!-- fin du bloc des cartes -->
             </div>
-
+            <!-- fin du container des cartes -->
         </section>
-        </div>
-    </main>   
+        <!-- fin de section restaurants -->
+    </main>
+    <!-- fin main -->
+    <footer class="footer">
+        <span class="footer__logo">OhMyFood</span>
+    </footer>
 </body>
 </html>

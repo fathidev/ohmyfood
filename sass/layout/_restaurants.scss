@@ -5,11 +5,11 @@
 .restaurants {
     &__container {
         background-color: #fafafa;
-        padding:18px;
+        padding: 18px 18px 75px 18px;
         margin: 0;
     }
 
-    &__bloc-title{
+    &__container-title{
         font-family: typography.$font-roboto;
     }
     &__cards {
@@ -46,7 +46,6 @@
                 top: 15px;
                 right:10px;
                 border-radius: 4px;
-                // position text for the badge "new"
                 display:flex;
                 justify-content: center;
                 align-items: center;
@@ -71,7 +70,7 @@
         align-items: center;
    
     }
-        // mettre le texte de description en colonne
+        // mettre le bloc texte de description en colonne
     &__description-text {
         flex-direction: column;
     }
@@ -86,7 +85,7 @@
     }
     
     .fa-heart:before{
-        color: pink;
+        // color: pink;
         padding: 24px;
     }
 }

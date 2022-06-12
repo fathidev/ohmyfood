@@ -1,0 +1,12 @@
+@use "../base/typography";
+.footer {
+    background-color: #353535;
+    padding: 25px 18px 71px 18px;
+
+    &__logo {
+        font-family: typography.$font-schrikhand;
+        font-size: 16px;
+        color: white ;
+    }
+}
+

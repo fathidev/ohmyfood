@@ -444,10 +444,10 @@ a {
 /* restaurants */
 .restaurants__container {
   background-color: #fafafa;
-  padding: 18px;
+  padding: 18px 18px 75px 18px;
   margin: 0;
 }
-.restaurants__bloc-title {
+.restaurants__container-title {
   font-family: "Roboto", serif;
 }
 .restaurants__cards {
@@ -517,8 +517,17 @@ a {
   font-size: 14px;
 }
 .restaurants .fa-heart:before {
-  color: pink;
   padding: 24px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 25px 18px 71px 18px;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 16px;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
