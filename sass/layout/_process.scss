@@ -5,15 +5,14 @@
 .process {
     counter-reset: step-process;
     background-color: variables.$color-white;
-    & .process__container {
+    &__container {
         padding:18px;
         margin: 0;
-
     }
-    & .process__title {
+    &__title {
         font-family: typography.$font-roboto;
     }
-    & .process__list {
+    &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -56,7 +55,7 @@
                 background-color: lighten(variables.$color-primary,35);
                 cursor: pointer;
                 @include mixins.bold-shadow;
-                transition-duration:1500ms;
+                @include mixins.transition-duration;
                 .fa-solid {
                     color:variables.$color-primary;
                     @include mixins.transition-duration;

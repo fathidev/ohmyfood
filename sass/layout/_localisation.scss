@@ -7,10 +7,10 @@
     gap:16px;
     padding: 5px;
     font-family: "Roboto", sans-serif;
-    & .localisation__text {
+    &__text {
         font-size: 15px;
     }
-    & .localisation__ico {
+    &__ico {
         font-size: 17px;
     }
 }

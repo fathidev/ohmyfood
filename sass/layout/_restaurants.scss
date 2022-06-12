@@ -1,16 +1,17 @@
 @use "../base/typography";
+@use "../abstracts/mixins";
 /* restaurants */
-.restaurants__container {
+.restaurants {
+    &__container {
     background-color: #fafafa;
     padding:18px;
     margin: 0;
+    }
 
-    
-    & .restaurants__title {
+    &__title {
         font-family: typography.$font-roboto;
     }
-    & .restaurants__cards {
-  
+    &__cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             column-gap: 2rem;
@@ -19,14 +20,20 @@
             @media (min-width:64rem) {
               grid-template-columns: repeat(2, 1fr);
             }
-          
-        & .restaurants__card {
-            border: 1px solid red;
-            height: 250px;
-            flex-grow: 1;
-            min-width: 180px;
-            border-radius: 16px;
-
-        }
+    }
+    &__card {
+        border: 1px solid red;
+        height: 250px;
+        flex-grow: 1;
+        min-width: 180px;
+        border-radius: 16px;
+        @include mixins.normal-shadow;
+        
+    }
+    &__img {
+        object-fit: cover;
+        height: 190px;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
     }
 }
