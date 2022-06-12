@@ -20,7 +20,7 @@
         padding-left:16px;
     }
     & li {
-        // incrementation 1, 2, 3 for each item of the list
+        // incrementation 1, 2, 3 ... for each item of the list
         &::before {
             content:counter(step-process);
             counter-increment: step-process;
