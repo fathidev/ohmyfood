@@ -477,16 +477,18 @@ a {
   content: "Nouveau";
   background-color: #99E2D0;
   font-family: "Roboto", serif;
-  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 90px;
   height: 30px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1b6150;
+  color: #278870;
 }
 .restaurants__img {
   object-fit: cover;
@@ -515,7 +517,7 @@ a {
   font-size: 14px;
 }
 .restaurants .fa-heart:before {
-  color: red;
+  color: pink;
   padding: 24px;
 }
 

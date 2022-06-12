@@ -38,17 +38,19 @@
                 content: "Nouveau";
                 background-color: variables.$color-tertiary;
                 font-family: (typography.$font-roboto);
-                width: 100px;
+                font-size: 14px;
+                font-weight: 500;
+                width: 90px;
                 height: 30px;
                 position: absolute;
-                top: 10px;
+                top: 15px;
                 right:10px;
                 border-radius: 4px;
                 // position text for the badge "new"
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                color: darken(variables.$color-tertiary, 50%);                
+                color: darken(variables.$color-tertiary, 40%);                
             }
     }
     &__img {
@@ -84,7 +86,7 @@
     }
     
     .fa-heart:before{
-        color:red;
+        color: pink;
         padding: 24px;
     }
 }
