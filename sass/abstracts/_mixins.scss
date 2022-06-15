@@ -1,3 +1,5 @@
+@use "./variables";
+
 @mixin box-shadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -16,14 +18,14 @@
     font-size: 23px;
     padding-right: $padding-right;
     // put de font in white
-    color: white;
+    color: variables.$color-white;
     // add contour on the font
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     transition: color 2s;
     // on the hover change the color background
     &:hover {
-        color: #9356DC;
+        color: variables.$color-primary;
     }
     
 }
