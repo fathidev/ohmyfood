@@ -3,26 +3,25 @@
 @use "../abstracts/variables";
 /* restaurants */
 .restaurants {
+    // position: relative;
     &__container {
         background-color: #fafafa;
         padding: 18px 18px 75px 18px;
         margin: 0;
     }
-
     &__container-title{
         font-family: typography.$font-roboto;
     }
     &__cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            column-gap: 2rem;
-            row-gap: 2rem;
+            column-gap: 32px;
+            row-gap: 32px;
         
-            @media (min-width:64rem) {
+            @media (min-width:1024px) {
               grid-template-columns: repeat(2, 1fr);
             }
     }
-   
     &__card {
             font-family: typography.$font-roboto;
             height: 250px;
@@ -62,12 +61,7 @@
         height: 190px;
         width: 100%;
         border-radius: 16px 16px 0 0;
-        // transition: transform .1s;
-        // &:hover {
-            
-        // }
     }
-    
     &__description h3,p {
         margin: 4px;
         padding-left: 10px;
@@ -77,13 +71,11 @@
         // mettre le max d'espace entre le bloc de texte et le coeur
         justify-content: space-between;
         align-items: center;
-   
     }
         // mettre le bloc texte de description en colonne
     &__description-text {
         flex-direction: column;
     }
-
     &__title {
         font-family: typography.$font-roboto;
         font-size: 16px;
@@ -92,9 +84,8 @@
         font-family: typography.$font-roboto;
         font-size: 14px;
     }
-    
-    .fa-heart:before{
-        // color: pink;
-        padding: 24px;
+    // heart on card 
+    &__heart {
+        @include mixins.heart-animation(14px);
     }
 }

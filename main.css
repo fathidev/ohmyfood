@@ -453,10 +453,10 @@ a {
 .restaurants__cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 32px;
+  row-gap: 32px;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .restaurants__cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -521,8 +521,16 @@ a {
   font-family: "Roboto", serif;
   font-size: 14px;
 }
-.restaurants .fa-heart:before {
-  padding: 24px;
+.restaurants__heart {
+  font-size: 23px;
+  padding-right: 14px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transition: color 2s;
+}
+.restaurants__heart:hover {
+  color: #9356DC;
 }
 
 /* footer */

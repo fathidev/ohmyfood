@@ -11,3 +11,19 @@
 @mixin transition-duration {
     transition-duration: 1500ms; 
 }
+
+@mixin heart-animation ($padding-right) {
+    font-size: 23px;
+    padding-right: $padding-right;
+    // put de font in white
+    color: white;
+    // add contour on the font
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: color 2s;
+    // on the hover change the color background
+    &:hover {
+        color: #9356DC;
+    }
+    
+}
