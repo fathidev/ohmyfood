@@ -571,4 +571,127 @@ a {
   width: 20px;
 }
 
+/* menu page */
+.header--WithArrow {
+  position: relative;
+}
+.header__arrow {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: black;
+}
+
+.cover__image {
+  object-fit: cover;
+  width: 100%;
+  height: 271px;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  border-radius: 36px 36px 0 0;
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6px 0 18px;
+}
+.menu__nameRestaurant {
+  font-family: "Shrikhand", cursive;
+  padding-left: 10px;
+  margin: 16px 0 9px 0;
+}
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2px;
+}
+@media (min-width: 1024px) {
+  .menu__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.menu__section {
+  padding: 0 18px;
+}
+.menu__section--title {
+  margin: 22px 0;
+  position: relative;
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.menu__section--title::before {
+  content: "";
+  width: 41px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 10px;
+  bottom: -9px;
+}
+
+.menuItem {
+  background-color: #fff;
+  margin: 14px 0;
+  padding: 16px;
+  display: flex;
+  border-radius: 0.75rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menuItem__title {
+  margin: 0px;
+  padding-bottom: 6px;
+  font-family: "Roboto", serif;
+}
+.menuItem__detail {
+  margin: 0px;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+.menuItem__price {
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.command {
+  display: flex;
+  justify-content: center;
+}
+.command__btn {
+  font-family: "Roboto", serif;
+  padding: 15px 49px;
+  margin: 36px 0 83px 0;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 40px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition-duration: 1000ms;
+  box-shadow: 1px 1px 5px grey;
+}
+.command__btn:hover {
+  cursor: pointer;
+  filter: brightness(115%);
+  transition-duration: 1000ms;
+  box-shadow: 2px 2px 6px grey;
+}
+
 /*# sourceMappingURL=main.css.map */
