@@ -17,7 +17,6 @@
             grid-template-columns: repeat(1, 1fr);
             column-gap: 32px;
             row-gap: 32px;
-        
             @media (min-width:1024px) {
               grid-template-columns: repeat(2, 1fr);
             }
@@ -86,6 +85,6 @@
     }
     // heart on card 
     &__heart {
-        @include mixins.heart-animation(14px);
+        @include mixins.heart-animation($padding-right:24px);
     }
 }
