@@ -601,6 +601,9 @@ a {
   margin-top: -50px;
   z-index: 1;
   position: relative;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu__header {
   display: flex;
@@ -616,7 +619,6 @@ a {
 .menu__container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2px;
 }
 @media (min-width: 1024px) {
   .menu__container {
@@ -627,13 +629,13 @@ a {
   padding: 0 18px;
 }
 .menu__section--title {
-  margin: 22px 0;
   position: relative;
+  padding-left: 10px;
+  margin: 22px 0;
   font-family: "Roboto", serif;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
 }
 .menu__section--title::before {
   content: "";
@@ -647,12 +649,13 @@ a {
 
 .menuItem {
   background-color: #fff;
+  border-radius: 0.75rem;
   margin: 14px 0;
   padding: 16px;
   display: flex;
-  border-radius: 0.75rem;
   justify-content: space-between;
   align-items: flex-end;
+  box-shadow: 1px 1px 5px grey;
 }
 .menuItem__title {
   margin: 0px;

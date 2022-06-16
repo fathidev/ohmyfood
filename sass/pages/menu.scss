@@ -19,7 +19,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-
+    // déplacement de la flèche sur l'axe Y
     transform: translateY(-50%);
     font-size: 24px;
     color: black;
@@ -35,14 +35,16 @@
 }
 
 // menu
-
 .menu {
     background-color: variables.$color-grey-light;
     border-radius: 36px 36px 0 0;
     margin-top: -50px;
     z-index: 1;
     position: relative;
-
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    
     &__header {
         display: flex;
         justify-content: space-between;
@@ -57,23 +59,25 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 2px;
+        
         @media (min-width:1024px) {
           grid-template-columns: repeat(3, 1fr);
+        //   column-gap: 2px;
         }
     }
 
     &__section {
         padding: 0 18px;
         &--title {
-            margin: 22px 0;
             position: relative;
+            padding-left: 10px;
+            margin: 22px 0;
             font-family: typography.$font-roboto;
             // force les caractères en capitale
             text-transform: uppercase;
             font-size:16px ;
             font-weight: 400;
-            padding-left: 10px;
+            // mise en place du trait de soulignement
             &::before {
                     content: "";
                     width: 41px;
@@ -89,12 +93,15 @@
 // contenhu du menu
 .menuItem {
     background-color: #fff;
+    border-radius: 0.75rem;
     margin: 14px 0;
     padding: 16px;
     display: flex;
-    border-radius: 0.75rem;
     justify-content:space-between;
     align-items:flex-end;
+    @include mixins.normal-shadow;
+
+
     &__title {
         margin:0px;
         padding-bottom: 6px;
