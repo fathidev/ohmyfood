@@ -390,22 +390,29 @@ a {
   font-family: "Roboto", serif;
 }
 .process__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-between;
+  display: grid;
+  row-gap: 32px;
   padding-left: 16px;
+}
+@media (min-width: 1024px) {
+  .process__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 32px;
+  }
 }
 .process li {
   position: relative;
   background-color: #f6f6f6;
   font-family: "Roboto", serif;
-  font-weight: 500;
-  width: 16px;
+  font-weight: 600;
+  min-width: 120px;
   height: 10px;
   padding: 32px 32px;
   border-radius: 16px;
   list-style-type: none;
+  display: flex;
+  align-items: center;
   flex-basis: 100%;
   transition-duration: 1500ms;
   box-shadow: 1px 1px 5px grey;
