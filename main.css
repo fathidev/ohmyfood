@@ -766,48 +766,40 @@ li {
   animation: rotate-ckeck 0.5s ease;
 }
 
-.delay-0 {
+.delay-1 {
   animation: apparition-element 600ms 200ms ease-in-out both;
 }
 
-.delay-1 {
+.delay-2 {
   animation: apparition-element 600ms 400ms ease-in-out both;
 }
 
-.delay-1 {
+.delay-3 {
   animation: apparition-element 600ms 600ms ease-in-out both;
 }
 
-.delay-2 {
-  animation: apparition-element 600ms 800ms ease-in-out both;
-}
-
-.delay-3 {
-  animation: apparition-element 600ms 800ms ease-in-out both;
-}
-
 .delay-4 {
-  animation: apparition-element 600ms 1000ms ease-in-out both;
+  animation: apparition-element 600ms 800ms ease-in-out both;
 }
 
 .delay-5 {
-  animation: apparition-element 600ms 1200ms ease-in-out both;
+  animation: apparition-element 600ms 1000ms ease-in-out both;
 }
 
 .delay-6 {
-  animation: apparition-element 600ms 1400ms ease-in-out both;
+  animation: apparition-element 600ms 1200ms ease-in-out both;
 }
 
 .delay-7 {
-  animation: apparition-element 600ms 1600ms ease-in-out both;
+  animation: apparition-element 600ms 1400ms ease-in-out both;
 }
 
 .delay-8 {
-  animation: apparition-element 600ms 1800ms ease-in-out both;
+  animation: apparition-element 600ms 1600ms ease-in-out both;
 }
 
 .delay-9 {
-  animation: apparition-element 600ms 2000ms ease-in-out both;
+  animation: apparition-element 600ms 1800ms ease-in-out both;
 }
 
 .command {

@@ -5,10 +5,13 @@
 .process {
     // initialisation du compteur pour les coffres du compteur
     counter-reset: step-process;
+    // fond blanc sur toute la partie process
     background-color: variables.$color-white;
 
     &__container {
+        // marges intérieures 
         padding:18px;
+        // pas de marges à l'extérieur
         margin: 0;
     }
     &__title {
@@ -52,8 +55,7 @@
             // attention obligation : mettre le parent (ici .process) en position relative
             position: absolute;
             bottom: 24px;
-            left:-14px
-            
+            left:-14px    
         }
 
         position: relative;
@@ -71,13 +73,14 @@
         @include mixins.transition-duration;
         @include mixins.normal-shadow;
             &:hover {
-                // apparition d'un pointeur "main"
+                // apparition d'un pointeur en forme de "main"
                 cursor: pointer;
                 // éclaircissement du background avec la fonction lighten
                 background-color: lighten(variables.$color-primary,35);
                 @include mixins.bold-shadow;
                 @include mixins.transition-duration;
                 .fa-solid {
+                    // modification de la couleur de l'icon fontawesome => couleur primaire : violet
                     color:variables.$color-primary;
                     @include mixins.transition-duration;
                 }

@@ -188,41 +188,12 @@
     }
 }
 
-// délais pour l'apparition des items du menu
-// voir pour l'automatisation dans un for par exemple
-  .delay-0{
-            animation: apparition-element 600ms 200ms ease-in-out both;
-  }
-  .delay-1 {
-            animation: apparition-element 600ms 400ms ease-in-out both;
-  }
-  .delay-1 {
-            animation: apparition-element 600ms 600ms ease-in-out both;
-  }
-  .delay-2 {
-            animation: apparition-element 600ms 800ms ease-in-out both;
-  }
-  .delay-3 {
-            animation: apparition-element 600ms 800ms ease-in-out both;
-  }
-  .delay-4 {
-            animation: apparition-element 600ms 1000ms ease-in-out both;
-  }
-  .delay-5 {
-            animation: apparition-element 600ms 1200ms ease-in-out both;
-  }
-  .delay-6{
-            animation: apparition-element 600ms 1400ms ease-in-out both;
-  }
-  .delay-7{
-            animation: apparition-element 600ms 1600ms ease-in-out both;
-  }
-  .delay-8 {
-            animation: apparition-element 600ms 1800ms ease-in-out both;
-  }
-  .delay-9 {
-            animation: apparition-element 600ms 2000ms ease-in-out both;
-  }
+// boucle for pour générer les délais d'apparition des 9 éléments de chaque menu
+@for $i from 1 through  9 {
+    .delay-#{$i} {
+        animation: apparition-element 600ms 200ms*$i ease-in-out both;
+    }
+}
 
 .command {
     display: flex;
