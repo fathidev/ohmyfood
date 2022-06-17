@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lien vers fontawesome -->
     <script src="https://kit.fontawesome.com/1856e01a18.js" crossorigin="anonymous"></script>
+    <!-- liaison vers le fichier principal css compilé -->
     <link rel="stylesheet" href="main.css">
     <title>Accueil - Oh my Food</title>
 </head>
 <body>
+    <!-- début du loader -->
     <div class="loader">
+        <!-- loader cercle avec les 3 couleurs du projet -->
     </div>
+    <!-- fin du loader -->
+
     <!-- header -->
     <header class ="header">
         <img class="header__logo" src="./images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food"></img>
     </header>
     <!-- fin header -->
-    <!-- main -->
+
+    <!-- début du main -->
     <main>
         <!-- section localisation -->
         <section class="localisation">
@@ -38,6 +45,7 @@
             <div class="process__container">
                 <h2 class="process__title">Fonctionnement</h2>
                 <ol class="process__list">
+                    <!--  les numéros des étapes du processus sont implémentés avec une fonction counter dans le scss -->
                     <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
                     <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
                     <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
@@ -48,9 +56,12 @@
         
         <!-- section restaurants  -->
         <section id="restaurants" class="restaurants">
+            <!-- début du container des cartes -->
             <div class="restaurants__container">
                 <h2 class="restaurants__container-title">Restaurants</h2>
+                <!-- début du bloc contenant les différentes cartes -->
                 <div class="restaurants__cards">
+                    <!-- la classe new permet d'insérer sur la carte le pseudo élément "Nouveau" -->
                    <a class="restaurants__card new" href="./pages/lapalettedugout.html">
                         <img class="restaurants__img" src="./images/restaurants/menu-1.jpg" alt="Menu resto 1" >
                         <div class="restaurants__description">
@@ -100,7 +111,7 @@
     </main>
     <!-- fin main -->
 
-    <!-- footer -->
+    <!-- début du footer -->
     <footer class="footer">
         <span class="footer__logo">OhMyFood</span>
         <ul class="footer_list">
@@ -128,6 +139,6 @@
             </li>
         </ul>
     </footer>
-    <!-- fin footer -->
+    <!-- fin  du footer -->
 </body>
 </html>

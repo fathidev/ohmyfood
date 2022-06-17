@@ -3,9 +3,13 @@
 @use "../base/typography";
 /* header */
 .header {
+    z-index:10000000;
+    position: relative;
     background-color: variables.$color-white;
+    // ajout d'une ombre en bas
     @include mixins.box-shadow;
     padding: 16px;
+    // centrer le logo au milieu
     display: flex;
     justify-content: center;
 }

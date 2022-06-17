@@ -1,3 +1,8 @@
+// pas de soulignement pour tous les liens a
 a {
     text-decoration: none;
+}
+// suppression du point de décoration pour tous les éléments li 
+li {
+    list-style-type: none;
 }

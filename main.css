@@ -333,6 +333,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* loader */
 .loader {
   position: fixed;
@@ -341,7 +345,7 @@ a {
   background-color: white;
   height: 100vh;
   inset: 0;
-  z-index: 1000000;
+  z-index: 10000001;
   opacity: 0.9;
   animation: disparition 200ms 3s both;
   transform-origin: top;
@@ -360,6 +364,8 @@ a {
 
 /* header */
 .header {
+  z-index: 10000000;
+  position: relative;
   background-color: #FFF;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 16px;
@@ -393,7 +399,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 .explore .explore__title {
   margin: 0;
@@ -442,7 +448,6 @@ a {
 @media (min-width: 1024px) {
   .process__list {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
     column-gap: 32px;
   }
 }
@@ -455,7 +460,6 @@ a {
   height: 10px;
   padding: 32px 32px;
   border-radius: 16px;
-  list-style-type: none;
   display: flex;
   align-items: center;
   flex-basis: 100%;
@@ -466,21 +470,21 @@ a {
   content: counter(step-process);
   counter-increment: step-process;
   background-color: #9356DC;
-  color: #FFF;
-  font-size: 13px;
   width: 24px;
   height: 24px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   position: absolute;
   bottom: 24px;
   left: -14px;
 }
 .process li:hover {
-  background-color: #f2eafb;
   cursor: pointer;
+  background-color: #f2eafb;
   box-shadow: 2px 2px 6px grey;
   transition-duration: 1500ms;
 }
@@ -600,7 +604,6 @@ a {
   margin: 24px 0 16px 0;
 }
 .footer__item {
-  list-style-type: none;
   padding-bottom: 8px;
 }
 .footer__link {

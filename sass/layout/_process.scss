@@ -3,6 +3,7 @@
 @use "../abstracts/mixins";
 /* process */
 .process {
+    // initialisation du compteur pour les coffres du compteur
     counter-reset: step-process;
     background-color: variables.$color-white;
 
@@ -15,34 +16,46 @@
     }
     &__list {
         display: grid;
+        // l'espace horizontal 
         row-gap: 32px;
+        // décalage de la gauche
         padding-left:16px;
+        // à partir du résolution de 1024px les étapes passent sur 3 colonnes
         @media (min-width: 1024px){
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        // un espace de 32px entre les colonnes
         column-gap: 32px;
         }
     }
     & li {
         // implémentation d'un compteur pour numéroter dans l'ordre de chaque élément de la liste
         &::before {
+            // compteur pour incrémenter les chiffres des steps du process
             content:counter(step-process);
+            // incrémation de 1, 2 , 3 pourt chaque li
             counter-increment: step-process;
+            // fond de couleur du cercle contenant le chiffre du step => couleur principale du project "violet
             background-color: variables.$color-primary;
-            color: variables.$color-white;
-            font-size: 13px;
+            // taille de l'élement 
             width: 24px;
             height: 24px;
+            // pour faire un cercle
+            border-radius: 50%;
+            // taille du chiffre
+            font-size: 13px;
+            // couleur du chiffre => blanc
+            color: variables.$color-white;
+            // permet de centrer le chiffre dans son élément
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%;
-            // attention obligation :mettre le parent en position relative
+            // attention obligation : mettre le parent (ici .process) en position relative
             position: absolute;
             bottom: 24px;
             left:-14px
             
         }
+
         position: relative;
         background-color: #f6f6f6;
         font-family: typography.$font-roboto;
@@ -51,16 +64,17 @@
         height: 10px;
         padding: 32px 32px;
         border-radius: 16px;
-        list-style-type: none;
-        // centrer en vertical le contenu le boite de chaque étape du process
+
         display: flex;
         align-items: center;
         flex-basis: 100%;
         @include mixins.transition-duration;
         @include mixins.normal-shadow;
             &:hover {
-                background-color: lighten(variables.$color-primary,35);
+                // apparition d'un pointeur "main"
                 cursor: pointer;
+                // éclaircissement du background avec la fonction lighten
+                background-color: lighten(variables.$color-primary,35);
                 @include mixins.bold-shadow;
                 @include mixins.transition-duration;
                 .fa-solid {
