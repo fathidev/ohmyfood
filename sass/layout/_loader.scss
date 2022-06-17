@@ -1,0 +1,34 @@
+@use "../abstracts/variables";
+/* loader */ 
+.loader {
+    position: fixed;
+    // centrer le cercle dans la boite
+    display: grid;
+    place-items: center;
+    // mettre un fond blanc
+    background-color: #FFFF;
+    // l'élément prend 100% de la taille de l'écran
+    height: 100vh;
+    // raccourci pour indiquer le positionnement top:0 right:0 bottom:0 et left:0
+    inset: 0;
+    // faire passer l'élément au dessus de tous
+    z-index: 1000000;
+    // appliquer une légère transparence sur l'élément
+    opacity: 0.9;
+    // durée de l'animation "disparition" 200ms et délai de 3 sec avant de démarrer
+    animation: disparition 200ms variables.$loader-duration both;
+    // l'animation se termine vers le haut
+    transform-origin: top;
+       &::after {
+        content:"";
+        border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            border-top: variables.$loader-thickness solid transparent;
+            border-right: variables.$loader-thickness solid variables.$color-primary;
+            border-bottom: variables.$loader-thickness solid variables.$color-secondary;
+            border-left: variables.$loader-thickness solid variables.$color-tertiary;
+            // durée de l'animation de rotation 3s en mode linéaire (vitesse continue)
+            animation: spin variables.$loader-duration linear;
+       }
+   }

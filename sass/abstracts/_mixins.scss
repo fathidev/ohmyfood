@@ -14,20 +14,46 @@
     transition-duration: 1500ms; 
 }
 
-// animations
-
+// coeur et son animation
 @mixin heart-animation ($padding-right) {
     font-size: 23px;
     padding-right: $padding-right;
-    // put de font in white
+    // mettre la police en blanc
     color: variables.$color-white;
-    // add contour on the font
+    // ajouter un contour noire de 1px à la police
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    // transition de 2s sur l'objet
     transition: color 2s;
-    // on the hover change the color background
+    // au hover changement de couleur vers la primaire
     &:hover {
         color: variables.$color-primary;
     }
-    
 }
+
+// appartion des élements des menus
+@keyframes apparition-element {
+
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// loader
+@keyframes disparition {
+    to {
+          transform: scale(0);
+      }
+  }
+  
+  @keyframes spin {
+      to {
+          transform: rotate(360deg);
+      }
+  }

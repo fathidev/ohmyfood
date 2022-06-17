@@ -80,12 +80,12 @@
         
         @media (min-width:1024px) {
           grid-template-columns: repeat(3, 1fr);
-        //   column-gap: 2px;
         }
     }
 
     &__section {
         padding: 0 18px;
+       
         &--title {
             position: relative;
             padding-left: 10px;
@@ -108,17 +108,22 @@
         }
     } 
 }
+
+
 // contenu du menu
 .menuItem {
     background-color: #fff;
     border-radius: 0.75rem;
     margin: 14px 0;
     display: flex;
+    // cacher la check box qui dépasse de la boite
     overflow: hidden;
     @include mixins.normal-shadow;
+
     
     &__header {
         padding: 16px;
+        // en lien avec le texte caché lorsqu'il est trop long ou au moment du check
         overflow: hidden;
     }
 
@@ -126,26 +131,34 @@
         margin:0px;
         padding-bottom: 6px;
         font-family:typography.$font-roboto;
+        // empêcher le retour à la ligne du texte
         white-space: nowrap;
-        text-overflow: ellipsis;
+        // cacher le texte qui dépasse
         overflow: hidden;
+        // mettre les 3 petits points
+        text-overflow: ellipsis;
     }
     &__detail {
         margin: 0px;
         font-family:typography.$font-roboto;
         font-size: 14px;
+        // empêcher le retour à la ligne du texte
         white-space: nowrap;
-        text-overflow: ellipsis;
+        // cacher le texte qui dépasse
         overflow: hidden;
+        // mettre les 3 petits points
+        text-overflow: ellipsis;
     }
     &__price {
-        display: flex;
         font-family:typography.$font-roboto;
         font-weight: bold;
         font-size: 14px;
-        margin-left: auto;
-        align-items: flex-end;
         padding: 16px;
+        display: flex;
+        // aligner le prix en bas de la box
+        align-items: flex-end;
+        // placer le prix tout à fait droite
+        margin-left: auto;
     }
     &__checkbox{
         background-color:#99E2D0;
@@ -174,6 +187,42 @@
         
     }
 }
+
+// délais pour l'apparition des items du menu
+// voir pour l'automatisation dans un for par exemple
+  .delay-0{
+            animation: apparition-element 600ms 200ms ease-in-out both;
+  }
+  .delay-1 {
+            animation: apparition-element 600ms 400ms ease-in-out both;
+  }
+  .delay-1 {
+            animation: apparition-element 600ms 600ms ease-in-out both;
+  }
+  .delay-2 {
+            animation: apparition-element 600ms 800ms ease-in-out both;
+  }
+  .delay-3 {
+            animation: apparition-element 600ms 800ms ease-in-out both;
+  }
+  .delay-4 {
+            animation: apparition-element 600ms 1000ms ease-in-out both;
+  }
+  .delay-5 {
+            animation: apparition-element 600ms 1200ms ease-in-out both;
+  }
+  .delay-6{
+            animation: apparition-element 600ms 1400ms ease-in-out both;
+  }
+  .delay-7{
+            animation: apparition-element 600ms 1600ms ease-in-out both;
+  }
+  .delay-8 {
+            animation: apparition-element 600ms 1800ms ease-in-out both;
+  }
+  .delay-9 {
+            animation: apparition-element 600ms 2000ms ease-in-out both;
+  }
 
 .command {
     display: flex;
