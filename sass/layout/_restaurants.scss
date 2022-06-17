@@ -82,7 +82,7 @@
         font-family: typography.$font-roboto;
         font-size: 14px;
     }
-    // heart on card 
+    // coeur sur la carte avec animation au hover
     &__heart {
         @include mixins.heart-animation($padding-right:24px);
     }

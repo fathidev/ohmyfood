@@ -46,14 +46,26 @@
 }
 
 // loader
+    // disparition du fond et du cercle
 @keyframes disparition {
     to {
           transform: scale(0);
       }
   }
-  
-  @keyframes spin {
-      to {
+
+  // rotation du cercle 
+@keyframes spin {
+    to {
           transform: rotate(360deg);
-      }
-  }
+    }
+}
+
+// rotation du check au hover
+@keyframes rotate-check {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
