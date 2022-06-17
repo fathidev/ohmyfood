@@ -14,6 +14,8 @@
     transition-duration: 1500ms; 
 }
 
+// animations
+
 @mixin heart-animation ($padding-right) {
     font-size: 23px;
     padding-right: $padding-right;
