@@ -28,6 +28,46 @@
     transform: rotate(0);
   }
 }
+.delay-1 {
+  animation: apparition-element 600ms 200ms ease-in-out both;
+}
+
+.delay-2 {
+  animation: apparition-element 600ms 400ms ease-in-out both;
+}
+
+.delay-3 {
+  animation: apparition-element 600ms 600ms ease-in-out both;
+}
+
+.delay-4 {
+  animation: apparition-element 600ms 800ms ease-in-out both;
+}
+
+.delay-5 {
+  animation: apparition-element 600ms 1000ms ease-in-out both;
+}
+
+.delay-6 {
+  animation: apparition-element 600ms 1200ms ease-in-out both;
+}
+
+.delay-7 {
+  animation: apparition-element 600ms 1400ms ease-in-out both;
+}
+
+.delay-8 {
+  animation: apparition-element 600ms 1600ms ease-in-out both;
+}
+
+.delay-9 {
+  animation: apparition-element 600ms 1800ms ease-in-out both;
+}
+
+.delay-10 {
+  animation: apparition-element 600ms 2000ms ease-in-out both;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -353,7 +393,7 @@ li {
   background-color: white;
   height: 100vh;
   inset: 0;
-  z-index: 10000001;
+  z-index: 2;
   opacity: 0.9;
   animation: disparition 200ms 3s both;
   transform-origin: top;
@@ -372,7 +412,7 @@ li {
 
 /* header */
 .header {
-  z-index: 10000000;
+  z-index: 1;
   position: relative;
   background-color: #FFF;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -392,7 +432,7 @@ li {
   font-family: "Roboto", sans-serif;
 }
 .localisation__text {
-  font-size: 15px;
+  font-size: 17px;
 }
 .localisation__ico {
   font-size: 17px;
@@ -651,10 +691,6 @@ li {
   height: 271px;
 }
 
-.menu__section {
-  overflow: hidden;
-}
-
 .menu {
   background-color: #F6F6F6;
   border-radius: 36px 36px 0 0;
@@ -687,6 +723,7 @@ li {
 }
 .menu__section {
   padding: 0 18px;
+  overflow: hidden;
 }
 .menu__section--title {
   position: relative;
@@ -709,7 +746,7 @@ li {
 
 .menuItem {
   background-color: #fff;
-  border-radius: 0.75rem;
+  border-radius: 12px;
   margin: 14px 0;
   display: flex;
   overflow: hidden;
@@ -718,7 +755,7 @@ li {
 .menuItem__header {
   padding: 16px;
   overflow: hidden;
-  flex-grow: 1;
+  flex-basis: 70%;
 }
 .menuItem__title {
   margin: 0px;
@@ -747,15 +784,15 @@ li {
 }
 .menuItem__checkbox {
   background-color: #99E2D0;
-  margin-right: -80px;
-  width: 80px;
+  margin-right: -59px;
+  width: 59px;
   transition: margin-right 0.5s;
   display: grid;
   place-items: center;
 }
 .menuItem__iconCheck {
   color: white;
-  font-size: 24px;
+  font-size: 21px;
 }
 .menuItem:hover {
   cursor: pointer;
@@ -765,46 +802,6 @@ li {
 }
 .menuItem:hover .menuItem__iconCheck {
   animation: rotate-check 0.5s ease;
-}
-
-.delay-1 {
-  animation: apparition-element 600ms 200ms ease-in-out both;
-}
-
-.delay-2 {
-  animation: apparition-element 600ms 400ms ease-in-out both;
-}
-
-.delay-3 {
-  animation: apparition-element 600ms 600ms ease-in-out both;
-}
-
-.delay-4 {
-  animation: apparition-element 600ms 800ms ease-in-out both;
-}
-
-.delay-5 {
-  animation: apparition-element 600ms 1000ms ease-in-out both;
-}
-
-.delay-6 {
-  animation: apparition-element 600ms 1200ms ease-in-out both;
-}
-
-.delay-7 {
-  animation: apparition-element 600ms 1400ms ease-in-out both;
-}
-
-.delay-8 {
-  animation: apparition-element 600ms 1600ms ease-in-out both;
-}
-
-.delay-9 {
-  animation: apparition-element 600ms 1800ms ease-in-out both;
-}
-
-.delay-10 {
-  animation: apparition-element 600ms 2000ms ease-in-out both;
 }
 
 .command {
@@ -831,4 +828,4 @@ li {
   box-shadow: 2px 2px 6px grey;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

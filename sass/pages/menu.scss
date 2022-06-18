@@ -6,6 +6,7 @@
 
 .header{
     &--WithArrow {
+        // pour placer la flêche
        position: relative;
     }
     &__arrow {
@@ -37,15 +38,12 @@
 }
 
 
-.menu__section  {
-    overflow: hidden;
-}
-
 // menu
 .menu {
     background-color: variables.$color-grey-light;
     border-radius: 36px 36px 0 0;
     margin-top: -50px;
+    // le menu passe au dessus de la cover avec le z-index 1
     z-index: 1;
     position: relative;
     max-width: 1280px;
@@ -74,6 +72,7 @@
 
     &__section {
         padding: 0 18px;
+        overflow: hidden;
        
         &--title {
             position: relative;
@@ -98,11 +97,10 @@
     } 
 }
 
-
 // contenu du menu
 .menuItem {
     background-color: #fff;
-    border-radius: 0.75rem;
+    border-radius: 12px;
     margin: 14px 0;
     display: flex;
     // cacher la check box qui dépasse de la boite
@@ -114,7 +112,7 @@
         // en lien avec le texte caché lorsqu'il est trop long ou au moment du check
         overflow: hidden;
         // mettre tous les contenus de la même largeur pour éviter les décalages de taille avec la checkbox
-        flex-grow:1;
+        flex-basis: 70%;
     }
     &__title {
         margin:0px;
@@ -149,20 +147,24 @@
         // placer le prix tout à fait droite
         margin-left: auto;
     }
-
-    $sizeCheckBox:80px;
+    // largeur de la check box sur la maquette
+    $sizeCheckBox:59px;
     &__checkbox{
-        background-color:#99E2D0;
+        background-color:variables.$color-tertiary;
+        // décalage de la checkbox hors champs pour être invisible
         margin-right: -$sizeCheckBox;
+        // fixer la taille de la checkbox de la même valeur que le décalage
         width: $sizeCheckBox;
         // une transition sur le déplacement de la checkbox
         transition: margin-right 0.5s;
+        // permet de centrer l'icone dans la boite
         display: grid;
         place-items: center;    
     }
     &__iconCheck {
         color: white;
-        font-size: 24px;
+        // taille de l'icone sur la maquette 21px
+        font-size: 21px;
     }
     &:hover {
         cursor: pointer;
@@ -170,18 +172,13 @@
         .menuItem__checkbox {
             margin-right: 0;
         }
+        // appel à l'animation pour que l'icone fasse une rotation
         .menuItem__iconCheck {
         animation : rotate-check 0.5s ease;
         }   
     }
 }
 
-// boucle for pour générer des classes avec les délais d'apparition des 9 éléments de chaque menu
-@for $i from 1 through  10 {
-    .delay-#{$i} {
-        animation: apparition-element 600ms 200ms*$i ease-in-out both;
-    }
-}
 
 // bouton pour commander
 .command {
@@ -203,6 +200,7 @@
             
         &__btn:hover {
                 cursor: pointer;
+                // éclaircissement de 15% du bouton 
                 filter: brightness(115%);
                 transition-duration: 1000ms;
                 @include mixins.bold-shadow;

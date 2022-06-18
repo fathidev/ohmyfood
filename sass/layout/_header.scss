@@ -3,7 +3,7 @@
 @use "../base/typography";
 /* header */
 .header {
-    z-index:10000000;
+    z-index:1;
     position: relative;
     background-color: variables.$color-white;
     // ajout d'une ombre en bas
