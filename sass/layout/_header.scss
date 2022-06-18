@@ -12,4 +12,7 @@
     // centrer le logo au milieu
     display: flex;
     justify-content: center;
+    &__logo {
+        width: 150px;
+    }
 }
