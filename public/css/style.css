@@ -1,5 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* coeur et son animation */
+/* appartion des items des menus */
 @keyframes apparition-element {
   0% {
     transform: scale(0);
@@ -10,16 +13,20 @@
     opacity: 1;
   }
 }
+/* loader */
+/* disparition du fond et du cercle */
 @keyframes disparition {
   to {
     transform: scale(0);
   }
 }
+/* rotation du cercle loader */
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
+/* rotation 3/4 du check au hover de l'item d'un menu */
 @keyframes rotate-check {
   0% {
     transform: rotate(-270deg);
@@ -28,6 +35,7 @@
     transform: rotate(0);
   }
 }
+/* boucle for pour générer des classes avec les délais d'apparition des 9 éléments de chaque menu */
 .delay-1 {
   animation: apparition-element 600ms 200ms ease-in-out both;
 }
@@ -628,10 +636,14 @@ li {
 .restaurants__heart {
   font-size: 23px;
   padding-right: 24px;
+  /* mettre la police en blanc */
   color: #FFF;
+  /* ajouter un contour noire de 1px à la police */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  /* transition de 2s sur l'objet */
   transition: color 2s;
+  /* au hover changement de couleur vers la primaire */
 }
 .restaurants__heart:hover {
   color: #9356DC;

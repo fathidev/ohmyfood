@@ -1,4 +1,4 @@
-// boucle for pour générer des classes avec les délais d'apparition des 9 éléments de chaque menu
+/* boucle for pour générer des classes avec les délais d'apparition des 9 éléments de chaque menu */
 @for $i from 1 through  10 {
     .delay-#{$i} {
         animation: apparition-element 600ms 200ms*$i ease-in-out both;

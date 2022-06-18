@@ -14,24 +14,24 @@
     transition-duration: 1500ms; 
 }
 
-// coeur et son animation
+/* coeur et son animation */ 
 @mixin heart-animation ($padding-right) {
     font-size: 23px;
     padding-right: $padding-right;
-    // mettre la police en blanc
+    /* mettre la police en blanc */
     color: variables.$color-white;
-    // ajouter un contour noire de 1px à la police
+    /* ajouter un contour noire de 1px à la police */ 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    // transition de 2s sur l'objet
+    /* transition de 2s sur l'objet */ 
     transition: color 2s;
-    // au hover changement de couleur vers la primaire
+    /* au hover changement de couleur vers la primaire */
     &:hover {
         color: variables.$color-primary;
     }
 }
 
-// appartion des élements des menus
+/* appartion des items des menus */
 @keyframes apparition-element {
 
     0% {
@@ -45,22 +45,22 @@
     }
 }
 
-// loader
-    // disparition du fond et du cercle
+/* loader */
+    /* disparition du fond et du cercle */ 
 @keyframes disparition {
     to {
           transform: scale(0);
       }
   }
 
-  // rotation du cercle 
+    /* rotation du cercle loader */  
 @keyframes spin {
     to {
           transform: rotate(360deg);
     }
 }
 
-// rotation 3/4 du check au hover
+/* rotation 3/4 du check au hover de l'item d'un menu */
 @keyframes rotate-check {
     0% {
         transform: rotate(-270deg);
