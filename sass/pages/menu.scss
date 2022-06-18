@@ -114,7 +114,7 @@
         // en lien avec le texte caché lorsqu'il est trop long ou au moment du check
         overflow: hidden;
         // mettre tous les contenus de la même largeur pour éviter les décalages de taille avec la checkbox
-        flex-basis: 80%;
+        flex-grow:1;
     }
     &__title {
         margin:0px;
@@ -177,7 +177,7 @@
 }
 
 // boucle for pour générer des classes avec les délais d'apparition des 9 éléments de chaque menu
-@for $i from 1 through  9 {
+@for $i from 1 through  10 {
     .delay-#{$i} {
         animation: apparition-element 600ms 200ms*$i ease-in-out both;
     }

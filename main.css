@@ -718,7 +718,7 @@ li {
 .menuItem__header {
   padding: 16px;
   overflow: hidden;
-  flex-basis: 80%;
+  flex-grow: 1;
 }
 .menuItem__title {
   margin: 0px;
@@ -801,6 +801,10 @@ li {
 
 .delay-9 {
   animation: apparition-element 600ms 1800ms ease-in-out both;
+}
+
+.delay-10 {
+  animation: apparition-element 600ms 2000ms ease-in-out both;
 }
 
 .command {
