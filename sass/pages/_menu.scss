@@ -6,9 +6,9 @@
 
 .header{
     &--WithArrow {
-        // pour placer la flêche
        position: sticky;
        top:0;
+       /* pour passer au dessus du menu qui est en z-index:1 */
        z-index: 2;
     }
     &__arrow {
