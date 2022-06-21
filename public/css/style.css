@@ -35,7 +35,7 @@
     transform: rotate(0);
   }
 }
-/* boucle for pour générer des classes avec les délais d'apparition des 9 éléments de chaque menu */
+/* boucle for pour générer des classes avec les délais d'apparition jusqu'à 10 éléments de chaque menu */
 .delay-1 {
   animation: apparition-element 600ms 200ms ease-in-out both;
 }
@@ -403,7 +403,7 @@ li {
   inset: 0;
   z-index: 2;
   opacity: 0.9;
-  animation: disparition 200ms 3s both;
+  animation: disparition 200ms 2500ms both;
   transform-origin: top;
 }
 .loader::after {
@@ -415,7 +415,7 @@ li {
   border-right: 3px solid #9356DC;
   border-bottom: 3px solid #FF79DA;
   border-left: 3px solid #99E2D0;
-  animation: spin 3s linear;
+  animation: spin 2500ms linear;
 }
 
 /* header */
